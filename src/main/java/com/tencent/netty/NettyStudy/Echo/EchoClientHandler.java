@@ -28,6 +28,7 @@ public class EchoClientHandler extends
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx,
         Throwable cause) {
+    	System.out.println("catch exception");
         cause.printStackTrace();
         ctx.close();
     }
